@@ -68,10 +68,10 @@ jobs:
       #    run: echo ${{ steps.docker_build.outputs.digest }}  
 
 deploy:
-   runs-on: ubundu-latest
-   needs: [build]
-   environment: 
-     name: production
-   steps: 
-     -name: deploying stuff
+  runs-on: ubundu-latest
+  needs: [build]
+  #  environment: 
+  #    name: production
+  steps: 
+    - name: deploying stuff
       run:  echo"testing deploy code"        
