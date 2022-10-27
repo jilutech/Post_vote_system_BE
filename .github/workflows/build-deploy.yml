@@ -73,5 +73,9 @@ jobs:
       name: production
     steps: 
      - name: deploying stuff
-       run:  echo"testing deploy code" 
-        
+       run:  echo "check deploy code" 
+       #pulling my git hub repo
+       #installing heroku cli
+       #heroku login
+       #add git remote for heroku
+       #git push heroku main
