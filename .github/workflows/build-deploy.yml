@@ -25,7 +25,7 @@ jobs:
          uses: actions/setup-python@v2  
          with: 
             python-version: "3.10.5"
-      #  -name: update pip
-      #   run: python -m pip install --updgrade pip
+       - name: update pip
+         run: python -m pip install --updgrade pip
       #  -name: install all dependencies
       #   run: pip install -r requirements.txt    
