@@ -1,0 +1,25 @@
+name : Build and Deploy
+
+on : [push,pull_request]
+
+# on: 
+#   push:
+#     branches: ["manin_branch","feature branch"] 
+
+# on: 
+#   push:
+#     branches:
+#        -"main_branch"
+#        -"feature_branch"
+#   pull:
+#      branches:
+#        -"test_branches"   
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+       - name: pulling git repo
+         uses: actions/checkout@v2
+       - name: tested jilu
+         run: echo "hello jilu"  
