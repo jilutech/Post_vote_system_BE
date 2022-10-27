@@ -65,13 +65,13 @@ jobs:
       #      cache-from: type=local,src=/tmp/.buildx-cache
       #      cache-to: type=local,dest=/tmp/.buildx-cache
       #  - name: Image digest
-      #    run: echo ${{ steps.docker_build.outputs.digest }}  
-
-deploy:
-  runs-on: ubundu-latest
-  needs: [build]
-  #  environment: 
-  #    name: production
-  steps: 
-    - name: deploying stuff
-      run:  echo"testing deploy code"        
+      #    run: echo ${{ steps.docker_build.outputs.digest }}  \\
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [build]
+    environment:
+      name: production
+    steps: 
+     - name: deploying stuff
+       run:  echo"testing deploy code" 
+        
